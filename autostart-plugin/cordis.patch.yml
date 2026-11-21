@@ -1,0 +1,4 @@
+# pet-assets-autostart bundle patch：一个宿主侧插件行
+- insert:
+    - id: pet-assets-autostart
+      name: pet-assets-autostart

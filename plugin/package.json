@@ -1,0 +1,25 @@
+{
+  "name": "pet-overlay",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "description": "桌宠：把一只会动、能说话的小家伙画在 DSH 网页界面里",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-session"
+      ]
+    }
+  },
+  "license": "MIT",
+  "main": "lib/index.js"
+}

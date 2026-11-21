@@ -1,0 +1,32 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 密钥与凭据（绝对不要提交）
+.env
+.env.*
+*.key
+*.pem
+*.jks
+*.keystore
+secrets.*
+credentials.*
+
+# 构建产物
+dist/
+build/
+*.apk
+*.aab
+*.zip
+
+# 日志与临时文件
+*.log
+tmp/
+.cache/
+.DS_Store
+Thumbs.db
+
+# 生成物：素材内联后的 client.js 体积大，但仍需提交（宿主直接读它）
+
+# 素材全量（56MB，从 npm 包取，不提交）
+assets/all/
